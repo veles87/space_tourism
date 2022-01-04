@@ -1,0 +1,376 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+/* add fonts */
+@font-face {
+    font-family: 'sf-pro-display';
+    src: url('../fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+        url('../fonts/SF-Pro-Display-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'sf-pro-display-bold';
+    src: url('../fonts/SF-Pro-Display-Bold.woff2') format('woff2'),
+        url('../fonts/SF-Pro-Display-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'spaceagecyrillic';
+    src: url('../fonts/spaceagecyrillic-regular.woff2') format('woff2'),
+        url('../fonts/spaceagecyrillic-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+
+}
+
+body{
+    font-family: 'sf-pro-display';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 118%;
+    color: #fff;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* header */
+
+.header {
+    background-image: url(../images/background/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0 35px;
+}
+
+.menu {}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    margin-right: 30px;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    font-family: 'sf-pro-display';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 116%;
+
+    transition: color .5s;
+}
+.menu__link:hover{
+    color: #CB0E0E;
+}
+
+.phone {
+    font-family: 'sf-pro-display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+
+    margin-left: auto;
+    transition: color .5s;
+}
+
+.phone:hover{
+    color:#CB0E0E
+}
+
+.login {
+    margin-left: 22px;
+    margin-right: 134px;
+}
+.header__content{
+    max-width: 600px;
+}
+
+.header__title {
+    font-family: 'spaceagecyrillic';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+
+    margin-bottom: 20px;
+}
+.header__title span{
+    font-family: 'spaceagecyrillic';
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-family: 'sf-pro-display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+
+    margin-bottom: 50px;
+}
+
+.header__btn {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    text-align: center;
+    width: 100%;
+    border: 1px solid #fff;
+
+    padding: 15px 10px 16px;
+
+    transition: color .5s;
+}
+.header__btn:hover{
+    color: #CB0E0E;
+    border: 1px solid #f81212;
+}
+
+.header__description {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 5%;
+}
+
+.header__description-text {
+    width: 165px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 121%;
+}
+
+.header__description-text + .header__description-text{
+    margin-left: 52px;
+}
+
+/* main */
+
+.about {
+    background-image: url(../images/background/bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'spaceagecyrillic';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+
+    padding: 100px 0;
+}
+
+.about__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+/* .about__item:nth-child(odd){
+    flex-direction: row-reverse;
+} */
+
+.about__img {
+    max-width: 100%;
+}
+
+.about__content {
+    width: 600px;
+
+}
+
+.about__content-title {
+    font-family: 'sf-pro-display';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+
+    margin-bottom: 5px;
+}
+
+.about__content-subtitle {
+    font-family: 'sf-pro-display';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 116%;
+    text-transform: uppercase;
+
+    margin-bottom: 31px;
+    color: #036CCA;
+
+}
+
+.about__content-text {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'sf-pro-display';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 118%;
+
+    margin-bottom: 50px;
+}
+.about__content-text p{
+    width: 165px;
+}
+
+
+.about__table {
+    margin-bottom: 50px;
+}
+
+.about__table-tr {
+    border: 1px solid #FFFFFF;
+    border-left: none;
+    border-right: none;
+}
+
+.about__table-tr + .about__table-tr{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 119%;
+    text-align: center;
+}
+
+.about__table-td {
+    padding: 10px 30px 10px 0;
+}
+
+.about__table-td span{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 121%;
+}
+.about__table-caption{
+    caption-side: bottom;
+    text-align: left;
+    margin-top: 20px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 116%;
+    color: #E5E5E5;
+
+}
+
+.button {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 116%;
+    text-align: center;
+
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 20px 45px;
+
+    transition: color .5s;
+}
+
+.button:hover {
+    color: #CB0E0E;
+    border: 1px solid #f81212;
+}
+
+
+/* how-to */
+
+.howto {
+    background-image: url(../images/background/bg-3.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-bottom: 100px;
+}
+
+.howto__box {
+    text-align: center;
+}
+.howto__box circle,
+.howto__box text,
+foreignObject {
+    cursor: pointer;
+    transition: all .5s;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 116%;
+}
+
+.howto__box g:hover circle{
+    r:20px;
+    fill: #036CCA;
+}
+
+.howto__box g:hover text{
+    fill: #036CCA;
+    font-size: 36px;
+}
+foreignObject{
+    text-align: left;
+}
+
+.howto__box g:hover foreignObject {
+    color: #036CCA;
+    font-size: 22px;
+}
+foreignObject .text {
+    text-align: right;
+}
