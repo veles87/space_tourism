@@ -374,3 +374,73 @@ foreignObject{
 foreignObject .text {
     text-align: right;
 }
+
+
+/* reservation */
+
+.reservation {
+    background-image: url(../images/background/bg-4.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.reservation__inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.reservation__text {
+    width: 165px;
+    margin-top: 103px;
+    margin-right: 53px;
+    margin-left: auto;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 121%;
+}
+
+.reservation__text + .reservation__text{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/* info */
+
+.info{
+    background-image: url(../images/background/bg-info.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+/* sentence */
+.sentence__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sentence__item {
+    border: 1px solid #fff;
+    margin-bottom: 25px;
+    
+}
+
+.sentence__item-box {
+    padding: 40px 75px;
+    text-align: center;
+}
+
+.sentence__item-text {}
+
+.sentence__price {}
+
+.sentence__price-old {}
+
+.sentence__price-new {}
+
