@@ -905,6 +905,44 @@ foreignObject .text {
         margin-top: 20px;
     }
 }
+@media (max-width:420px){
+    .header__top{
+        padding-top: 10px;
+    }
+    .header__title span {
+        font-size: 55px;
+    }
+    .login{
+        padding: 0;
+    }
+
+    .header__title {
+        font-size: 32px;
+        line-height: 50%;
+    }
+
+    .header__text {
+        font-size: 18px;
+        line-height: 80%;
+        margin-bottom: 30px;
+    }
+
+    .header__btn {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 70%;
+        width: 80%;
+        padding: 15px 10px;
+    }
+    .header__description{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .header__description-text{
+        font-size: 14px;
+        line-height: 100%;
+    }
+}
 @media(max-width:360px){
     .header__top{
         flex-wrap: wrap;
@@ -922,4 +960,30 @@ foreignObject .text {
     .menu__list{
         padding-top: 150px;
     }
+    .header__title span {
+        font-size: 38px;
+    }
+    .header__title {
+        font-size: 28px;
+        line-height: 50%;
+    }
+    .header__text{
+        font-size: 18px;
+        line-height: 80%;
+    }
+    .header__btn {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 70%;
+        width: 80%;
+        padding: 10px 10px;
+    }
+    .header__description{
+        margin-bottom: 10%;
+    }
+    .header__description-text+.header__description-text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
 }
