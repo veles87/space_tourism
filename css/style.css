@@ -845,7 +845,6 @@ foreignObject .text {
         margin-bottom: 30px;
     }
 }
-
 @media (max-width:895px) {
     .header__top{
         padding-top: 35px;
