@@ -24,7 +24,6 @@
     display: block;
     height: 2px;
     background-color: #fff;
-    
 }
 
 .menu__btn span::before,
@@ -117,8 +116,6 @@ button{
     align-items: center;
     padding: 75px 0 35px;
 }
-
-.menu {}
 
 .menu__list {
     display: flex;
@@ -376,7 +373,7 @@ button{
     background-image: url(../images/background/bg-3.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     padding-bottom: 100px;
 }
 
@@ -466,7 +463,6 @@ foreignObject .text {
 
 .sentence__item {
     width: 500px;
-    
 }
 
 .sentence__item-box {
@@ -496,8 +492,6 @@ foreignObject .text {
     color: #CB0E0E;
 }
 
-.sentence__price {}
-
 .sentence__price-old {
     text-align: right;
 
@@ -513,13 +507,10 @@ foreignObject .text {
 .sentence__price-old::before{
     content: '';
     position: absolute;
-
     width: 68px;
-
     background-color: #CB0E0E;
     border: 1px solid #CB0E0E;
     transform: rotate(17.1deg);
-    
 }
 
 .sentence__price-new {
@@ -623,12 +614,6 @@ foreignObject .text {
     border: 2px solid #fff;
 }
 
-.slider__box {
-}
-
-.slider__box-item {
-}
-
 .slider__box-img {
     margin: 0 auto;
 }
@@ -668,7 +653,6 @@ foreignObject .text {
 .contacts__inner {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .contacts__box {
@@ -686,8 +670,6 @@ foreignObject .text {
 .contacts__title{
     padding-bottom: 46px;
 }
-
-.contacts__form {}
 
 .contacts__form-input {
     background-color: #010203;
@@ -745,7 +727,6 @@ foreignObject .text {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0 150px;
-    
 }
 
 .footer__inner {
@@ -792,8 +773,6 @@ foreignObject .text {
     width: 165px;
 }
 
-.footer__links-item {}
-
 .footer__links-link,
 .footer__links-phone {
     font-weight: normal;
@@ -805,8 +784,10 @@ foreignObject .text {
 
 .footer__links-link:hover,
 .footer__links-phone:hover{
-    
     color: #CB0E0E;
+}
+.howto__box-list{
+    display: none;
 }
 
 /* @media */
@@ -838,9 +819,30 @@ foreignObject .text {
         padding-bottom: 60px;
     }
 }
+@media (max-width:1050px){
+    .sentence__inner{
+        display: block;
+    }
+    .sentence__item {
+        width: 100%;
+    }
+    .sentence__price-btn{
+        margin-bottom: 30px;
+    }
+}
 @media (max-width: 1024px){
     .login{
         margin-right: 0;
+    }
+    .reservation__inner{
+        display: block;
+    }
+    .reservation__text {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 30px;
     }
 }
 
@@ -891,7 +893,69 @@ foreignObject .text {
     .header{
         background-position: center right;
     }
+    .howto__box svg{
+        display: none;
+    }
+    .howto__box-list{
+        display: block;
+        list-style: none;
+    }
+    .howto__box-item{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 119%;
 
+        padding-bottom: 40px;
+        padding-left: 30px;
+        margin-left: 20px;
+        text-align: left;
+        text-align: left;
+        position: relative;
+        border-left: 1px solid #fff;
+    }
+    .howto__box-item:last-child{
+        border-left: none;
+    }
+    .howto__box-item::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .howto__title{
+        padding: 75px 0;
+    }
+    .howto{
+        padding-bottom: 70px;
+    }
+    .services__inner{
+        display: block;
+    }
+    .services__box-list{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 170px;
+    }
+    .services__buttons {
+        max-width: 500px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .slick-slide img {
+        display: block;
+        width: 100%;
+    }
+    .services,
+    .info {
+        padding-bottom: 75px;
+    }
+    .slider__inner{
+        padding: 0;
+    }
 }
 @media (max-width:620px){
     .header__content{
@@ -936,6 +1000,20 @@ foreignObject .text {
         margin-left: 0;
         margin-top: 20px;
     }
+    .reservation{
+        background-position: top left;
+    }
+    .reservation__title{
+        font-size: 36px;
+        line-height: 100%;
+        padding: 70px 0;
+    }
+    .sentence__title{
+        font-size: 36px;
+        line-height: 100%;
+        padding: 70px 0;
+    }
+
 }
 @media(max-width:560px){
     .about__table-tr:first-child{
@@ -961,24 +1039,15 @@ foreignObject .text {
         font-size: 20px;
         line-height: 110%;
     }
-}
-@media(max-width:440px){
-        /* .about__table-td {
-            padding: 7px 5px 7px 0;
-            font-size: 12px;
-        }
-
-        .about__table-tr+.about__table-tr {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 50%;
-        }
-        .about__table-tr span{
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 90%;
-            padding-top: 5px;
-        } */
+    .howto__title {
+        font-size: 40px;
+    }
+    .reservation__title,
+    .sentence__title {
+        font-size: 30px;
+        line-height: 100%;
+        padding: 70px 0;
+    }
 }
 @media (max-width:420px){
     .header__top{
@@ -1017,6 +1086,28 @@ foreignObject .text {
         font-size: 14px;
         line-height: 100%;
     }
+    .howto__title {
+        font-size: 34px;
+    }
+    .reservation__title,
+    .sentence__title {
+        font-size: 26px;
+        line-height: 100%;
+        padding: 50px 0;
+    }
+    .services__btn{
+        font-size: 14px;
+    }
+    .sentence__item-box{
+        padding: 48px 13px;
+    }
+    .sentence__price-btn{
+        font-size: 16px;
+    }
+    .services__btn--first{
+        margin-bottom: 35px;
+    }
+
 }
 @media(max-width:360px){
     .header__top{
@@ -1069,6 +1160,15 @@ foreignObject .text {
     }
     .about__item{
         padding-bottom: 75px;
+    }
+    .howto__title {
+        font-size: 28px;
+    }
+    .reservation__title,
+    .sentence__title {
+        font-size: 22px;
+        line-height: 100%;
+        padding: 50px 0;
     }
 }
 
