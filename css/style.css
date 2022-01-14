@@ -829,6 +829,16 @@ foreignObject .text {
     .sentence__price-btn{
         margin-bottom: 30px;
     }
+    .contacts__inner{
+        display: block;
+    }
+    .contacts__box{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contacts__guarantees{
+        margin: 0 auto;
+    }
 }
 @media (max-width: 1024px){
     .login{
@@ -1014,6 +1024,31 @@ foreignObject .text {
     }
 
 }
+@media (max-width:570px){
+    .footer__inner{
+        display: block;
+    }
+    .footer__text{
+        width: 100%;
+        margin-right: 0;
+    }
+    .footer__text p+p {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .footer__menu,
+    .footer__links{
+        width: 100%;
+        margin-right: 0;
+    }
+    .footer__menu{
+        margin-bottom: 70px;
+    }
+    .footer{
+        text-align: center;
+        padding: 55px 0;
+    }
+}
 @media(max-width:560px){
     .about__table-tr:first-child{
         display: none;
@@ -1046,6 +1081,12 @@ foreignObject .text {
         font-size: 30px;
         line-height: 100%;
         padding: 70px 0;
+    }
+    .contacts__guarantees-img{
+        max-width: 100%;
+    }
+    .contacts__guarantees{
+        width: 100%;
     }
 }
 @media (max-width:420px){
@@ -1100,11 +1141,15 @@ foreignObject .text {
     .sentence__item-box{
         padding: 48px 13px;
     }
-    .sentence__price-btn{
+    .sentence__price-btn,
+    .contacts__btn {
         font-size: 16px;
     }
     .services__btn--first{
         margin-bottom: 35px;
+    }
+    .contacts__title{
+        font-size: 36px;
     }
 
 }
@@ -1168,6 +1213,9 @@ foreignObject .text {
         font-size: 22px;
         line-height: 100%;
         padding: 50px 0;
+    }
+    .contacts__btn{
+        font-size: 13px;
     }
 }
 
